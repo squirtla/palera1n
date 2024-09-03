@@ -395,7 +395,7 @@ jobs:
           mirror: 'https://apt.procurs.us/'
 
       - name: Download all Darwin artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
 
       - name: Prepare artifact
         run: |
@@ -890,7 +890,7 @@ jobs:
         uses: tj-actions/branch-names@v7
 
       - name: Download build tag
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: build-tag
 
